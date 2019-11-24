@@ -1,7 +1,7 @@
 {
   "homepageTitle": "Benjamin Barral",
   "homepageParagraph":
-    "Hi ! </br> I’m Benjy, a passionate multi-faceted engineer, mathematician and programmer.</br>I graduated from Polytechnique (Paris) and UCL (London). </br>My domain of expertise is visual computing in its various forms : deep learning, computer vision, image processing, graphics and rendering, photogrammetry, 3D geometry, AR and VR… </br>My main interest is to be part of state-of-the-art research : tackling unsolved problems and conceiving novel algorithms. </br>I have software experience in Python, C++, Tensorflow, Matlab, C# and Java. </br></br>Have a look at my personal projects, and feel free to contact me for opportunities ! ",
+    "</br>Hi ! </br> I’m Benjy, a passionate multi-faceted engineer, mathematician and programmer.</br>I graduated from Polytechnique (Paris) and UCL (London). </br>My domain of expertise is visual computing in its various forms : deep learning, computer vision, image processing, graphics and rendering, photogrammetry, 3D geometry, AR and VR… </br>My main interest is to be part of state-of-the-art research : tackling unsolved problems and conceiving novel algorithms. </br>I have software experience in Python, C++, Tensorflow, Matlab, C# and Java. </br>Have a look at my personal projects, and feel free to contact me for opportunities ! ",
   "projectList": [
     {
       "id": "face_intrinsics",
