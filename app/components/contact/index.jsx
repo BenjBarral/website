@@ -52,7 +52,7 @@ const ContactLink = styled.a`
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-    `} text-shadow: 2px 2px #eaf0a4;
+    `} text-shadow: 2px 2px #e6d2e6;
 `;
 
 const Icon = styled.i`
@@ -73,9 +73,15 @@ const ContactType = styled(P)`
 `;
 
 const ContactValue = styled(P)`
+
   ${media.phone`
     margin: 0;
     `};
+    ${media.desktop`
+      ${p => p.min?`
+        min-width: 210px;
+        `:""};
+      `};
 `;
 
 const Lines = styled.div`
@@ -125,7 +131,7 @@ class Contact extends Component {
         <ContactPage overflowauto nearBottomOfPage={nearBottomOfPage}>
           <ContactWrapper margin overflowauto flex justifycenter>
             <ContactLink
-              href="mailto:ellth92@gmail.com?Subject=Hi%20Elliott!"
+              href="mailto:benjybarral@gmail.com?Subject=Hi%20Elliott!"
               target="_blank"
             >
               <ContactType tone1dark lead title bold>
@@ -137,10 +143,10 @@ class Contact extends Component {
                 </Text>
               </Lines>
               <ContactValue tone1dark lead title>
-                ellth92@gmail.com
+                benjybarral@gmail.com
               </ContactValue>
             </ContactLink>
-            <ContactLink href="http://github.com/ellt92" target="_blank">
+            <ContactLink href="http://github.com/BenjBarral" target="_blank">
               <ContactType tone1dark lead title bold>
                 <Icon className="fa fa-github-square" /> Github
               </ContactType>
@@ -150,10 +156,10 @@ class Contact extends Component {
                 </Text>
               </Lines>
               <ContactValue tone1dark lead title>
-                @ellt92
+                @BenjBarral
               </ContactValue>
             </ContactLink>
-            <ContactLink href="http://linkedin.com/in/ellt92" target="_blank">
+            <ContactLink href="https://www.linkedin.com/in/benjamin-barral-8a097b129/" target="_blank">
               <ContactType tone1dark lead title bold>
                 <Icon className="fa fa-linkedin-square" /> LinkedIn
               </ContactType>
@@ -162,12 +168,12 @@ class Contact extends Component {
                   {".".repeat(500)}
                 </Text>
               </Lines>
-              <ContactValue tone1dark lead title>
-                /in/ellt92
+              <ContactValue min tone1dark lead title>
+                /in/benjamin-barral
               </ContactValue>
             </ContactLink>
             <ContactLink
-              href="https://docs.google.com/document/d/19640Og0vWjnXd7V8286G2SZHAZ2l8OZlXJfVgX_7dHM/edit?usp=sharing"
+              href="https://drive.google.com/file/d/1G7_l5a_VapbvegXFv3W2tBsjqlp13Jg1/view?usp=sharing"
               target="_blank"
             >
               <ContactType tone1dark lead title bold>
@@ -179,7 +185,7 @@ class Contact extends Component {
                 </Text>
               </Lines>
               <ContactValue tone1dark lead title nowrap>
-                Elliott Thompson
+                Benjamin Barral
               </ContactValue>
             </ContactLink>
           </ContactWrapper>

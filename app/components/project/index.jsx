@@ -8,8 +8,7 @@ import { media, Wrapper, Container, Title, Text, P } from "styles";
 
 const Wrap = styled(Wrapper)`
   position: relative;
-  /* display: flex; */
-  overflow: visible;
+  display: flex;
   width: 100%;
   height: 100%;
   /* position: absolute; */
@@ -18,6 +17,7 @@ const Wrap = styled(Wrapper)`
 const Content = styled(P)`
   max-width: 650px;
   text-align: justify;
+  /*overflow: "visible !important";*/
   line-height: 1.5rem;
   /* opacity: ${p => (p.nearTopOfPage ? 1 : 0)}; */
   /* transition: 0.5s opacity; */
@@ -26,7 +26,7 @@ const Content = styled(P)`
 const Img = styled.img`
   border: none;
   position: absolute;
-  width: 100%;
+  width: 80%;
   height: 100%;
   top: 0;
   left: 0;
@@ -71,11 +71,11 @@ const ScrollPromptLeft = styled.div`
 `;
 
 const ProjectTitle = styled.span`
-  text-shadow: 2px 2px #eaf0a4;
+  text-shadow: 2px 2px #e6d2e6;
 `;
 
 const ProjectText = styled(P)`
-  text-shadow: 1px 1px #eaf0a4;
+  text-shadow: 1px 1px #e6d2e6;
 `;
 
 const ProjectMedia = styled.div`
@@ -137,7 +137,7 @@ const Project = ({ projectid }) => {
             <P>
               <ProjectMedia>{mediaContent}</ProjectMedia>
               <ProjectText tone1dark title>
-                {project.copy}
+              <div dangerouslySetInnerHTML={{"__html":project.copy}} />
               </ProjectText>
             </P>
           </Text>

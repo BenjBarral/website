@@ -76,15 +76,15 @@ const ScrollPromptLeft = styled.div`
 `;
 
 const ProjectListTitle = styled.span`
-  text-shadow: 2px 2px #eaf0a4;
+  text-shadow: 2px 2px #e6d2e6;
 `;
 
 const ProjectListSubTitle = styled.span`
-  text-shadow: 1px 1px #eaf0a4;
+  text-shadow: 2px 2px #e6d2e6;
 `;
 
 const ProjectListText = styled(P)`
-  text-shadow: 1px 1px #eaf0a4;
+  text-shadow: 2px 2px #e6d2e6;
 `;
 
 const ProjectListMedia = styled.div`

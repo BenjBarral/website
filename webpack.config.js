@@ -51,8 +51,8 @@ module.exports = {
   plugins: [
     new ExtractTextPlugin("bundle.css"),
     new HtmlWebpackPlugin({
-      title: "Elliott Thompson",
-      favicon: "favicon.jpg",
+      title: "Benjamin Barral",
+      favicon: "benj.jpg",
       template: "index.ejs"
     })
   ]

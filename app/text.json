@@ -1,39 +1,50 @@
 {
-  "homepageTitle": "Elliott Thompson",
+  "homepageTitle": "Benjamin Barral",
   "homepageParagraph":
-    "Hi there 👋I'm a software engineer with a penchant for visual computing. My experience extends across the full development stack. I usually write software in Javascript and Python however I like to think of myself as a polyglot. I'm always keen to hear about interesting projects so feel free to contact me.",
+    "Hi ! </br> I’m Benjy, a passionate multi-faceted engineer, mathematician and programmer.</br>I graduated from Polytechnique (Paris) and UCL (London). </br>My domain of expertise is visual computing in its various forms : deep learning, computer vision, image processing, graphics and rendering, photogrammetry, 3D geometry, AR and VR… </br>My main interest is to be part of state-of-the-art research : tackling unsolved problems and conceiving novel algorithms. </br>I have software experience in Python, C++, Tensorflow, Matlab, C# and Java. </br></br>Have a look at my personal projects, and feel free to contact me for opportunities ! ",
   "projectList": [
     {
-      "id": "rtiWebapp",
-      "title": "RTI Interactive WebApp",
-      "thumbnail": "thumbnail-rti-webapp.png",
+      "id": "face_intrinsics",
+      "title": "Deep face texture intrinsics - Masters Thesis, Tensorflow",
+      "thumbnail": "texture.png",
       "copy":
-        "For my master thesis I created an interactive web application that allows users to inspect reflectance transformation imaging panoramas. This required the streaming of gigabytes of image data and the implementation of complex curvature shading algorithms and geometry manipulation. It also required the implementation of optimisations such as image caching policies. The application was written in C++ and compiled down to JavaScript and WebGL using emscripten.",
-      "copyShort": "An interactive web app for viewing panoramic rti images",
+        "This is my project for my Masters thesis, entitled : Semi-supervised face texture intrinsics disentanglement in-the-wild.</br>I designed and trained a deep neural network for the task of disentangling a face appearance texture into physical-based face intrinsics — albedo, normal and illumination —  that recover high-frequency details of the human face, in a semi-supervised way.</br>I used Tensorflow (Python) for deep learning, and C++ for face tracking and rendering.</br>Check out the video above for a small demo (<a style=color:blue href=\"https://github.com/BenjBarral/FACE_INTRINSICS_EDITING\"> source code for the face animations</a>), as well as some <a style=color:blue href=\"https://benjbarral.github.io/MSc_Thesis_Results/index.html\">samples of my neural network results</a>.",
+      "copyShort": "Masters thesis on Deep learning for face reconstruction, and demos of small applications.",
       "mediaType": "video",
       "mediaUrl":
-        "https://drive.google.com/file/d/1D4m4lIlFcpDHL1tXVQQV5iWtrSmeMB7y/preview"
+        "https://drive.google.com/file/d/1-8Ba3He1bbO2n7NpIic-zh4jhnkb2oSX/preview"
+
     },
     {
-      "id": "escapeRoom",
-      "title": "Escape Room VR",
+      "id": "escape_room",
+      "title": "VR Escape Room - C#, Unity",
       "thumbnail": "thumbnail-escape-room-vr.png",
       "copy":
-        "I contributed to a 10min long escape room video game in VR along with four other postgraduates at UCL. This was developed using Unity for the HTC Vive Pro. The demo video above shows a complete run-through of the game. We implemented haptic feedback, physical locomotion (flying) as well as 3D audio and visual puzzles.",
+        "</br>This is an escape room game in Virtual Reality I created with four other postgraduates at UCL. Developed using Unity, for the HTC Vive Pro.</br> I was involved in : physics (engineered and coded a way to fly in VR), haptic feedback, 3D audio, game flow and scene animations.</br> <a style=color:blue href=\"https://drive.google.com/file/d/1TQV8NwkSOlxkC5OYK4BYYErpCb2BEC06/preview\" target=\"_blank\"> Complete run-through of the game here.</a> ",
       "copyShort": "A 10 minute virtual reality escape room experience",
       "mediaType": "video",
       "mediaUrl":
-        "https://drive.google.com/file/d/1TQV8NwkSOlxkC5OYK4BYYErpCb2BEC06/preview"
+        "https://drive.google.com/file/d/1609T9tiO4BbeCrltXFXVRg1dGJrB2foE/preview"
     },
     {
-      "id": "particleBackground",
-      "title": "Particle Background",
-      "thumbnail": "thumbnail-particle-background.png",
+      "id": "stable_fluids",
+      "title": "Stable fluids - Java, Processing",
+      "thumbnail": "fluids.png",
       "copy":
-        "This open source library adds a particle effect as the background to any webpage. The library was written in CSS3 and JavaScript and runs using the HTML5 canvas element. This library can be found by visiting my github through the contact page.",
-      "copyShort": "A HTML5 particle background written in CSS3 and React",
-      "mediaType": "image",
-      "mediaUrl": "https://i.imgur.com/slLjenH.gif"
+        "</br>This is a physics-based 2D interactive fluid simulator.</br> It is an implementation of Jos Stam’s ‘Stable fluids’ algorithm (<a style=color:blue href=\"http://movement.stanford.edu/courses/cs448-01-spring/papers/stam.pdf\" target=\"_blank\">paper</a>).</br> The program allows to manually animate fluids (liquids and gas) in real-time.</br> Coded in Java, using the Processing library : <a style=color:blue href=\"https://github.com/BenjBarral/Stable-Fluids\" target=\"_blank\"> source code here.</a>",
+        "copyShort": "A real-time fluid simulator in Java.",
+      "mediaType": "video",
+      "mediaUrl": "https://drive.google.com/file/d/1dcs10yyo-PpHZpzTSeYSf-MDE3mCYAPo/preview"
+    },
+    {
+      "id": "delaunay_filter",
+      "title": "2D Sound Delaunay Filter - C++, OpenCV",
+      "thumbnail": "delaunay_filter.png",
+      "copy":
+        "This is a real-time webcam-based image filter with sound interaction.</br> I use classical image processing methods (contour detection, 2D Delaunay triangulation..) for the image transformation. I engineered a real-time rhythm detection algorithm based on Fast Fourier Transform. The image filter reacts to the music through ‘wave-like’ effects. </br> Coded in C++ with OpenCV : <a style=color:blue href=\"https://github.com/BenjBarral/2DDelaunayLiveWebcamFilter\" target=\"_blank\"> source code here.</a>",
+        "copyShort": "A real-time webcam filter interacting with sound, written in C++.",
+      "mediaType": "video",
+      "mediaUrl": "https://drive.google.com/file/d/11Vz1m3J34Io8Syum2hYHKFdIiK3IBmZe/preview"
     }
   ]
 }

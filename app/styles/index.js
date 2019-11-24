@@ -87,10 +87,10 @@ export const getColour = p => {
   if (p.blue) return "blue";
   else if (p.red) return "red";
   else if (p.white) return "white";
-  else if (p.tone1) return "#43c6ac";
-  else if (p.tone1dark) return "rgba(36, 108, 94, 1)";
-  else if (p.tone2) return "#f8ffae";
-  else if (p.tone2dark) return "#eaf0a4";
+  else if (p.tone1) return "#e6ccff";
+  else if (p.tone1dark) return "#604180";
+  else if (p.tone2) return "#e6ccff";
+  else if (p.tone2dark) return "#604180";
   else return "rgba(0,0,0,0.7)";
 };
 
@@ -153,7 +153,7 @@ export const Wrapper = styled.div`
       if (p.centerboth || p.justifycenter) return "center";
       else if (p.justifyspacebetween) return "space-between";
     }};
-    overflow: ${p => (p.overflowauto ? "auto" : "none")};
+    overflow:scroll;
     width: ${p => p.width};
     height: ${p => p.height};
     min-height: ${p => p.minheight};

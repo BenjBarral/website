@@ -96,12 +96,27 @@ const ScrollPromptRight = styled.div`
 `;
 
 const HomepageTitle = styled.span`
-  text-shadow: 2px 2px #eaf0a4;
+  text-shadow: 2px 2px #e6d2e6;
+`;
+
+const Portrait = styled.img`
+  height: 150px;
+  width: 150px;
 `;
 
 const HomepageText = styled(P)`
-  text-shadow: 1px 1px #eaf0a4;
+  text-shadow: 2px 2px #e6d2e6;
 `;
+
+const HomepageP = styled(P)`
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    ${media.phone`
+      flex-direction: column-reverse;
+      align-items: center;
+      `};
+  `;
 
 function mapStateToProps(state) {
   return {
@@ -165,13 +180,13 @@ class Homepage extends Component {
           <Home>
             <Container flex centerboth>
               <HomeContent nearTopOfPage={nearTopOfPage} margin>
-                <P tone1dark>
+                <HomepageP tone1dark>
                   <Text title sizetitle tone1dark textshadow="tone2dark">
                     <HomepageTitle>{copy.homepageTitle}</HomepageTitle>
-                  </Text>
-                </P>
+                  </Text> <div><Portrait src="benj.jpg" /></div>
+                </HomepageP>
                 <HomepageText tone1dark title>
-                  {copy.homepageParagraph}
+                <div dangerouslySetInnerHTML={{"__html":copy.homepageParagraph}} />
                 </HomepageText>
               </HomeContent>
             </Container>

@@ -9,8 +9,8 @@ const Background = styled.div`
     height: 100%;
     width: 100%;
     z-index: -9990;
-    box-shadow: inset 0px 0px 0px 6px #43c6ac;
-    background: linear-gradient(45deg, #43c6ac, #f8ffae);
+    box-shadow: inset 0px 0px 0px 6px #bf80ff00;
+    background: linear-gradient(45deg, #e6ccff00, #bf80ffc9);
     ${'' /* background: linear-gradient(225deg, #22c1c3, #fdbb2d); */}
     ${'' /* ${media.phone`
         background: linear-gradient(0deg, #fff, rgba(255, 212, 0, 0.37));

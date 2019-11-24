@@ -15,7 +15,7 @@ const Wrap = styled(Wrapper)`
 
 const NavItem = styled(Wrapper)`
   margin-right: 10px;
-  text-shadow: 1px 1px #eaf0a4;
+  text-shadow: 2px 2px #e6d2e6;
   :hover {
     text-decoration: underline;
     a {
@@ -24,7 +24,7 @@ const NavItem = styled(Wrapper)`
   }
   text-decoration: ${p => (p.selected ? "underline" : "none")};
   a {
-    color: #246c5e;
+    color: #5e246c;
   }
 `;
 
